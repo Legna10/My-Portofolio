@@ -1,0 +1,33 @@
+.site-footer {
+  background: #000;
+  color: #eee;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 16px;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.site-footer a {
+  color: #25f312;
+  text-decoration: none;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.site-footer a:hover {
+  color: #1540ff;
+}
+
+.container.light .site-footer {
+  background: #fff;
+  color: #333;
+}
+
+.container.light .site-footer a {
+  color: #1540ff;
+}
+
+.container.light .site-footer a:hover {
+  color: #25f312;
+}
