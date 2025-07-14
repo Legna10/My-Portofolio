@@ -1,8 +1,9 @@
 import React from 'react';
 import './AboutMe.css';
-import profile from '../../assets/profile.png';
-import github from '../../assets/github.svg';
-import linkedin from '../../assets/linkedin.svg';
+import profile from '@/assets/profile.png';
+import github from '@/assets/github.svg';
+import linkedin from '@/assets/linkedin.svg';
+import Contact from '../Contact/Contact';
 
 const AboutMe = () => {
   const education = [
@@ -34,7 +35,7 @@ const AboutMe = () => {
       date: 'Sep 2024 - Present',
       details: [
         'Introduced campus to over 300 students and parents from Samarinda.',
-        'Presented the university to over 250 students and parents from SMK St. Mikael.',
+        'Introduced campus to over 250 students and parents from SMK St. Mikael.',
         'Collaborated to promote Faculty of Medicine to several schools.',
         'Delivered presentations at 3 high schools in Java.',
       ],
@@ -55,24 +56,33 @@ const AboutMe = () => {
       <div className="square">
         <h2>About Me</h2>
         <div className="about-content">
-          <img src={profile} alt="Profile" className="about-img" />
-          <div className="about-text">
-            <p>
-              A graduate of a Vocational High School majoring in{' '}
-              <span className="highlight">Computer and Network Engineering</span>, currently pursuing a Bachelor's degree in{' '}
-              <span className="highlight">Informatics</span> with a concentration in{' '}
-              <span className="highlight">Cybersecurity</span>. Experienced in network services and certified. Has the ability to work well in a team and communicate effectively.
-            </p>
-          <div className="about-extras-inline">
-            <a
-              href="/CV.pdf"
-              className="download-btn"
-              download
-              rel="noopener noreferrer"
-            >
-              Download CV
-            </a>
+          <div className="profile-social-wrapper">
+            <img src={profile} alt="Profile" className="about-img" />
+            <div className="social-spread">
+              <a href="https://www.linkedin.com/in/anggela" target="_blank" rel="noopener noreferrer" className="social-icon linkedin">
+                <img src={linkedin} alt="LinkedIn" />
+              </a>
+              <a href="https://github.com/Legna10" target="_blank" rel="noopener noreferrer" className="social-icon github">
+                <img src={github} alt="GitHub" />
+              </a>
+            </div>
           </div>
+          <div className="about-text-wrapper">
+            <div className="about-text">
+              <p className="about-text">
+                A graduate of a Vocational High School majoring in{' '}
+                <span className="highlight">Computer and Network Engineering</span>, currently pursuing a Bachelor's degree in{' '}
+                <span className="highlight">Informatics</span> with a concentration in{' '}
+                <span className="highlight">Cybersecurity</span>. Experienced in network services and certified. Has the ability to work well in a team and communicate effectively.
+              </p>
+            </div>
+            <div className="about-extras-inline">
+              <a href="/CV.pdf" className="download-btn"
+                download rel="noopener noreferrer">
+                Download CV </a>
+              <a href="/Contact" className="download-btn">
+                Contact Me </a>
+            </div>
           </div>
         </div>
       </div>

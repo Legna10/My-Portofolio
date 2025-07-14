@@ -1,6 +1,80 @@
 .projects-section {
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   text-align: center;
+}
+
+.highlight-project {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.highlight-project img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.highlight-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent 60%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.highlight-overlay h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.highlight-overlay p {
+  font-size: 16px;
+  margin-bottom: 6px;
+  max-width: 600px;
+}
+
+.highlight-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #25f312;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.highlight-btn:hover {
+  background-color: #38ff57;
+  color: #000;
+}
+
+.container.light .highlight-overlay {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.7), transparent 60%);
+  color: #000;
+}
+
+.container.light .highlight-btn {
+  background-color: #0d2fcc;
+  color: white;
+}
+
+.container.light .highlight-btn:hover {
+  background-color: #0f4bff;
 }
 
 .project-gallery {
@@ -72,7 +146,6 @@
   background: #1a1a1a;
   color: #fff;
   border-radius: 12px;
-  padding: 16px;
   width: 100%;
   max-width: 600px;
   max-height: 90vh;
@@ -101,31 +174,48 @@
   border-radius: 8px;
 }
 
-.modal-content h3 {
-  margin-top: 0;
-  margin-bottom: 5px;
+.modal-header-inside {
+  position: sticky;
+  top: 0;
+  background: #1a1a1a;
+  padding: 4px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px 12px 0 0;
+}
+
+.container.light .modal-header-inside {
+  background: #fff;
+  color: #000;
+}
+
+.modal-header-inside h3 {
+  margin: 0;
   font-size: 24px;
 }
 
-.modal-content p {
-  margin-bottom: 12px;
-  text-align: justify;
-}
-
-.close-btn {
+.modal-header-inside .close-btn {
+  all: unset;
   position: absolute;
-  top: 12px;
   right: 16px;
-  background: none;
-  border: none;
   font-size: 24px;
   color: #25f312;
   cursor: pointer;
   transition: transform 0.1s ease;
 }
 
-.container.light .close-btn {
+.container.light .modal-header-inside .close-btn {
   color: #0d2fcc;
+}
+
+.modal-body {
+  padding: 0px 12px;
+}
+
+.modal-content p {
+  margin-bottom: 12px;
+  text-align: justify;
 }
 
 .close-btn:hover {
@@ -162,6 +252,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+  margin-bottom: 6px;
 }
 
 .modal-content a {
@@ -227,27 +318,4 @@
   .project-gallery {
     column-count: 1;
   }
-}
-.modal-footer {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-}
-
-.chevron-close-btn {
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: #25f312;
-  cursor: pointer;
-  padding: 8px;
-  transition: transform 0.2s ease;
-}
-
-.chevron-close-btn:hover {
-  transform: scale(1.2);
-}
-
-.container.light .chevron-close-btn {
-  color: #0d2fcc;
 }

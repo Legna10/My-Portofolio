@@ -1,15 +1,46 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
-import Navbar from './components/navbar/navbar';
-import About from './components/About/About';
-import Projects from './components/Projects/Projects';
-import Certificates from './components/Certificates/Certificates';
-import Contact from './components/Contact/Contact';
-import Footer from './components/Footer/Footer';
-import ScrollToTop from './components/ScrollToTop';
+import Navbar from '@/components/Navbar/Navbar';
+import About from '@/components/About/About';
+import Projects from '@/components/Projects/Projects';
+import Certificates from '@/components/Certificates/Certificates';
+import Contact from '@/components/Contact/Contact';
+import Footer from '@/components/Footer/Footer';
+import CTFPage from '@/components/ctfnih';
+import ScrollToTop from '@/components/ScrollToTop';
+import '@/index.css';
 
-import './index.css';
+const MainLayout = ({ children, theme, setTheme }) => (
+  <div className={`container ${theme === 'dark' ? 'dark' : 'light'}`}>
+    <Navbar theme={theme} setTheme={setTheme} />
+    <div className="main-content">{children}</div>
+    <Footer />
+  </div>
+);
+
+const AppRoutes = ({ theme, setTheme }) => {
+  const location = useLocation();
+  const isCTFPage = location.pathname === '/ctfnih';
+
+  return isCTFPage ? (
+    <Routes>
+      <Route path="/ctfnih" element={<CTFPage />} />
+    </Routes>
+  ) : (
+    <MainLayout theme={theme} setTheme={setTheme}>
+      <Routes>
+        <Route path="/" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skillsntools" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/certificates" element={<Certificates />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<h1 style={{ textAlign: 'center' }}>404 - Page Not Found</h1>} />
+      </Routes>
+    </MainLayout>
+  );
+};
 
 const App = () => {
   const [theme, setTheme] = useState('light');
@@ -25,22 +56,8 @@ const App = () => {
 
   return (
     <Router>
-      <ScrollToTop /> {/* ✅ Scroll to top on route change */}
-      <div className={`container ${theme === 'dark' ? 'dark' : 'light'}`}>
-        <Navbar theme={theme} setTheme={setTheme} />
-        <div className="main-content">
-          <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/skillsntools" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/certificates" element={<Certificates />} />
-            <Route path="/contact" element={<Contact theme={theme} />} />
-            <Route path="*" element={<h1 style={{ textAlign: 'center' }}>404 - Page Not Found</h1>} />
-          </Routes>
-        </div>
-        <Footer />
-      </div>
+      <ScrollToTop />
+      <AppRoutes theme={theme} setTheme={setTheme} />
     </Router>
   );
 };

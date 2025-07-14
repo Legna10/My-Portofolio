@@ -32,7 +32,7 @@ const Contact = () => {
     const message = formData.get("message")
 
     try {
-      const res = await fetch("/api/contactForm", {
+      const res = await fetch("/api/Contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

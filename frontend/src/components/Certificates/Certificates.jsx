@@ -5,10 +5,11 @@ import cert2 from '../../assets/Certif/BNSP.png'
 import cert3 from '../../assets/Certif/1.pdf'
 import event1 from '../../assets/Certif/hology.png'
 import event2 from '../../assets/Certif/gemastik.jpg'
-import event3 from '../../assets/Certif/bssn.jpg'
-import event4 from '../../assets/Certif/compsphere.jpg'
-import event5 from '../../assets/Certif/interact.jpg'
-import event6 from '../../assets/Certif/techx.png'
+import event3 from '../../assets/Certif/setsail.png'
+import event4 from '../../assets/Certif/bssn.jpg'
+import event5 from '../../assets/Certif/compsphere.jpg'
+import event6 from '../../assets/Certif/interact.jpg'
+import event7 from '../../assets/Certif/techx.png'
 import file from '../../assets/file.svg'
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
@@ -25,12 +26,12 @@ const eventCerts = [
   { src: event3 },
   { src: event4 },
   { src: event5 },
-  { src: event6 }
+  { src: event6 },
+  { src: event7 }
 ]
 
 const Certificates = () => {
   const [selectedImg, setSelectedImg] = useState(null)
-  const [selectedPdf, setSelectedPdf] = useState(null)
 
   return (
     <div className="certificates">
@@ -88,11 +89,6 @@ const Certificates = () => {
         {selectedImg && (
           <div className="modal" onClick={() => setSelectedImg(null)}>
             <img src={selectedImg} alt="Certificate enlarged" />
-          </div>
-        )}
-        {selectedPdf && (
-          <div className="modal" onClick={() => setSelectedPdf(null)}>
-            <iframe src={selectedPdf} title="Certificate PDF" className="modal-pdf"></iframe>
           </div>
         )}
       </div>

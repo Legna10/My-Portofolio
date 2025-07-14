@@ -15,7 +15,6 @@ import TP6 from '../../assets/Project/TP6.png';
 import P6 from '../../assets/Project/P6.png'
 import TP9 from '../../assets/Project/TP9.png';
 import conf from '../../assets/Project/confidential.png'
-import { BsChevronLeft } from 'react-icons/bs';
 
 const projectData = [
   {
@@ -106,7 +105,7 @@ const projectData = [
     description: 'This Website Portfolio is a personal portfolio website built using React and hosted on Netlify. It displays my background, projects, certifications, and achievements in a structured and visually engaging layout. The site includes interactive features such as modal pop-ups for project details, dark and light mode support, and organized sections for easy navigation. This website was created as a digital space to represent my professional journey and make my work accessible to potential collaborators, employers, and anyone interested in what I do.',
     githublink: 'https://github.com/Legna10/',
     doclink:'',
-    tags: ['React', 'Netlify',]
+    tags: ['React', 'JS', 'Netlify',]
   },
   {
     id: 10,
@@ -143,6 +142,15 @@ const Projects = () => {
 
   return (
     <div className="projects-section">
+      <div className="highlight-project">
+        <img src={TP6} alt="Highlight Project" />
+        <div className="highlight-overlay">
+          <h2>WinterFalls</h2>
+          <p>some challenges that u might like? Just bite it!</p>
+          <a href="/ctfnih" className="highlight-btn">
+            Visit Site </a>
+        </div>
+      </div>
       <div className="project-gallery" ref={galleryRef}>
         {projectData.map(project => (
           <div key={project.id} className="project-thumb" onClick={() => openProject(project)}>
@@ -160,31 +168,30 @@ const Projects = () => {
       {selectedProject && (
         <div className="project-modal">
           <div className="modal-content">
-            <button className="close-btn" onClick={closeProject}>✖</button>
-            <h3>{selectedProject.title}</h3>
-            <img src={selectedProject.image} alt={selectedProject.title} />
-            <p>{selectedProject.description}</p>
-            <div className="modal-links">
-              {selectedProject.githublink && (
-                <p>
-                  <a href={selectedProject.githublink} target="_blank" rel="noopener noreferrer">
-                  GitHub
-                  </a>
-                </p>
-              )}
-
-              {selectedProject.doclink && (
-                <p>
-                  <a href={selectedProject.doclink} target="_blank" rel="noopener noreferrer">
-                    Docs
-                  </a>
-                </p>
-              )}
+            <div className="modal-header-inside">
+              <h3>{selectedProject.title}</h3>
+              <button className="close-btn" onClick={closeProject}>✖</button>
             </div>
-            <div className="modal-footer">
-              <button className="chevron-close-btn" onClick={closeProject} aria-label="Close">
-                <BsChevronLeft />
-              </button>
+            <div className="modal-body">
+              <img src={selectedProject.image} alt={selectedProject.title} />
+              <p>{selectedProject.description}</p>
+              <div className="modal-links">
+                {selectedProject.githublink && (
+                  <p>
+                    <a href={selectedProject.githublink} target="_blank" rel="noopener noreferrer">
+                    GitHub
+                    </a>
+                  </p>
+                )}
+
+                {selectedProject.doclink && (
+                  <p>
+                    <a href={selectedProject.doclink} target="_blank" rel="noopener noreferrer">
+                      Docs
+                    </a>
+                  </p>
+                )}
+              </div>
             </div>
           </div>
         </div>

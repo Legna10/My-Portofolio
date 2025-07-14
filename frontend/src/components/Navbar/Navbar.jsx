@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import light from '../../assets/light_mode.svg';
-import dark from '../../assets/dark_mode.svg';
+import light from '@/assets/light_mode.svg';
+import dark from '@/assets/dark_mode.svg';
 import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
