@@ -1,5 +1,4 @@
 [build]
-  base = frontend
   publish = "dist"
   functions = "netlify/functions"
   command = "npm run build"
