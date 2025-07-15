@@ -14,6 +14,9 @@ import P5 from '../../assets/Project/P5.png'
 import TP6 from '../../assets/Project/TP6.png';
 import P6 from '../../assets/Project/P6.png'
 import TP9 from '../../assets/Project/TP9.png';
+import TP11 from '../../assets/Project/TP11.png';
+import P11 from '../../assets/Project/P11.png';
+import stay from '../../assets/Project/stay.png';
 import conf from '../../assets/Project/confidential.png'
 
 const projectData = [
@@ -116,6 +119,16 @@ const projectData = [
     githublink: 'https://github.com/Legna10/Checkie-by-AngPhie',
     doclink:'',
     tags: ['React', 'CRUD', ]
+  },
+  {
+    id: 11,
+    title: 'Stay143',
+    thumbnail: TP11,
+    image: P11,
+    description: 'A K-pop-themed CTF challenge site built with React, Firebase, and Netlify. Solve fun and tricky puzzles inspired by BlackPink, Stray Kids, and more!',
+    githublink: 'https://github.com/Legna10/Stay143',
+    doclink:'',
+    tags: ['React', 'Firebase', 'Netlify', 'Cybersecurity']
   }
 ];
 
@@ -143,11 +156,11 @@ const Projects = () => {
   return (
     <div className="projects-section">
       <div className="highlight-project">
-        <img src={TP6} alt="Highlight Project" />
+        <img src={stay} alt="Highlight Project" />
         <div className="highlight-overlay">
-          <h2>WinterFalls</h2>
+          <h2>Stay143</h2>
           <p>some challenges that u might like? Just bite it!</p>
-          <a href="/ctfnih" className="highlight-btn">
+          <a href="https://stay.anggelafelayni.site" className="highlight-btn" target="_blank" rel="noopener noreferrer">
             Visit Site </a>
         </div>
       </div>

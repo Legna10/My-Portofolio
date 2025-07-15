@@ -7,7 +7,6 @@ import Projects from '@/components/Projects/Projects';
 import Certificates from '@/components/Certificates/Certificates';
 import Contact from '@/components/Contact/Contact';
 import Footer from '@/components/Footer/Footer';
-import CTFPage from '@/components/ctfnih';
 import ScrollToTop from '@/components/ScrollToTop';
 import '@/index.css';
 
@@ -19,28 +18,19 @@ const MainLayout = ({ children, theme, setTheme }) => (
   </div>
 );
 
-const AppRoutes = ({ theme, setTheme }) => {
-  const location = useLocation();
-  const isCTFPage = location.pathname === '/ctfnih';
-
-  return isCTFPage ? (
+const AppRoutes = ({ theme, setTheme }) => (
+  <MainLayout theme={theme} setTheme={setTheme}>
     <Routes>
-      <Route path="/ctfnih" element={<CTFPage />} />
+      <Route path="/" element={<About />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/skillsntools" element={<About />} />
+      <Route path="/projects" element={<Projects />} />
+      <Route path="/certificates" element={<Certificates />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="*" element={<h1 style={{ textAlign: 'center' }}>404 - Page Not Found</h1>} />
     </Routes>
-  ) : (
-    <MainLayout theme={theme} setTheme={setTheme}>
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/skillsntools" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/certificates" element={<Certificates />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="*" element={<h1 style={{ textAlign: 'center' }}>404 - Page Not Found</h1>} />
-      </Routes>
-    </MainLayout>
-  );
-};
+  </MainLayout>
+);
 
 const App = () => {
   const [theme, setTheme] = useState('light');
