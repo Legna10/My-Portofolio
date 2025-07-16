@@ -26,7 +26,7 @@ const skills = [
       { name: "Flask", icon: <SiFlask />, level: 85 },
       { name: "React", icon: <FaReact />, level: 85 },
       { name: "Laravel", icon: <FaLaravel />, level: 85 },
-      { name: "Bootstap", icon: <FaBootstrap />, level: 85 },
+      { name: "Bootstrap", icon: <FaBootstrap />, level: 85 },
     ]
   },
   {
@@ -64,8 +64,6 @@ const tools = [
       { name: "Google Colab" },
       { name: "Android Studio" },
       { name: "Eclipse" },
-      { name: "Bash" },
-      { name: "Xampp" }
     ]
   },
   {
@@ -91,6 +89,17 @@ const tools = [
       { name: "Metasploit" },
       { name: "CyberChef" },
       { name: "Linux (Kali, Ubuntu, Debian)" },
+    ]
+  },
+  ,
+  {
+    category: "DevOps & Deployment",
+    items: [
+      { name: "Docker" },
+      { name: "Github" },
+      { name: "Firebase" },
+      { name: "Netlify" },
+      { name: "XAMPP" },
     ]
   },
   {
