@@ -13,6 +13,7 @@ import TP5 from '../../assets/Project/TP5.png';
 import P5 from '../../assets/Project/P5.png'
 import TP6 from '../../assets/Project/TP6.png';
 import P6 from '../../assets/Project/P6.png'
+import P7 from '../../assets/Project/P7.png'
 import TP9 from '../../assets/Project/TP9.png';
 import TP11 from '../../assets/Project/TP11.png';
 import P11 from '../../assets/Project/P11.png';
@@ -84,7 +85,7 @@ const projectData = [
     id: 7,
     title: 'Case X',
     thumbnail: conf,
-    image: conf,
+    image: P7,
     description: 'Case X is a digital forensic investigation focused on identifying and analyzing electronic evidence from a suspect is disk image, suspected of involvement in human trafficking through the dark web. Analysis was conducted using Autopsy to examine the file system structure, uncover hidden files, and extract relevant digital artifacts. Network evidence from a provided PCAP file was examined using Wireshark and NetworkMiner, revealing communication with hidden services and anonymous servers. Steganography techniques were detected using QuickStego, while encrypted files were decrypted with the help of CyberChef and John the Ripper was used for password cracking. The collected evidence helped reconstruct the sequence of events and link the suspect is digital activity to illegal operations on the dark web.',
     githublink: '',
     doclink:'',
