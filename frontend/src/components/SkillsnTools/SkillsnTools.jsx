@@ -103,15 +103,6 @@ const tools = [
     ]
   },
   {
-  category: "DevOps & Deployment",
-  items: [
-    { name: "Docker" },
-    { name: "GitHub" },
-    { name: "Firebase Hosting"},
-    { name: "Netlify" },
-  ]
-  },
-  {
     category: "Others",
     items: [
       { name: "Google Workspace" },
@@ -152,7 +143,7 @@ const SkillsnTools = () => {
       <div className="square">
         <h2>My Skills</h2>
         <div className="filter-buttons">
-          {['All', 'Programming & Scripting', 'Networking', 'Cybersecurity', 'Soft Skills'].map(btn => (
+          {['All', 'Programming & Scripting', 'Networking', 'Cybersecurity','DevOps & Deployment', 'Soft Skills'].map(btn => (
             <button
               key={btn}
               className={skillFilter === btn ? 'active' : ''}
