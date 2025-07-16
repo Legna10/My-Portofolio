@@ -3,6 +3,7 @@ import './AboutMe.css';
 import profile from '@/assets/profile.png';
 import github from '@/assets/github.svg';
 import linkedin from '@/assets/linkedin.svg';
+import medium from '@/assets/medium.svg';
 import Contact from '../Contact/Contact';
 
 const AboutMe = () => {
@@ -64,6 +65,9 @@ const AboutMe = () => {
               </a>
               <a href="https://github.com/Legna10" target="_blank" rel="noopener noreferrer" className="social-icon github">
                 <img src={github} alt="GitHub" />
+              </a>
+              <a href="https://medium.com/@angelafelayni" target="_blank" rel="noopener noreferrer" className="social-icon medium">
+                <img src={medium} alt="Medium" />
               </a>
             </div>
           </div>

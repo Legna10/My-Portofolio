@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from 'react'
 import './Contact.css'
 import linkedin from '../../assets/linkedin.svg'
 import github from '../../assets/github.svg'
-import youtube from '../../assets/youtube.svg'
 import instagram from '../../assets/instagram.svg'
+import medium from '../../assets/medium.svg'
 
 const Contact = () => {
   const form = useRef()
@@ -108,8 +108,8 @@ useEffect(() => {
         <ul className="social-links">
           <li><a href="https://www.linkedin.com/in/anggela" target="_blank" rel="noopener noreferrer"><img src={linkedin} alt="LinkedIn" /></a></li>
           <li><a href="https://github.com/Legna10" target="_blank" rel="noopener noreferrer"><img src={github} alt="GitHub" /></a></li>
-          <li><a href="https://www.youtube.com/@angelafelayni" target="_blank" rel="noopener noreferrer"><img src={youtube} alt="YouTube" /></a></li>
           <li><a href="https://www.instagram.com/hae.angell" target="_blank" rel="noopener noreferrer"><img src={instagram} alt="Instagram" /></a></li>
+          <li><a href="https://medium.com/@angelafelayni" target="_blank" rel="noopener noreferrer"><img src={medium} alt="Medium" /></a></li>
         </ul>
       </div>
     </div>

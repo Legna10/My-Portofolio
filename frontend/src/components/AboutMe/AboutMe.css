@@ -278,17 +278,22 @@
 }
 
 .social-icon.github {
-  transform: translate(-50%, 70%) translateX(120px);
+  transform: translate(-70%, 100%) translateX(120px);
 }
 .social-icon.linkedin {
-  transform: translate(-50%, -200%) translateX(-120px);
+  transform: translate(-50%, -100%) translateX(-120px);
 }
-
+.social-icon.medium {
+  transform: translate(-130%, -330%) translateX(120px);
+}
 .container.dark .social-icon.github {
-  transform: translate(-50%, 70%) translateX(-120px);
+  transform: translate(-30%, 100%) translateX(-120px);
 }
 .container.dark .social-icon.linkedin {
-  transform: translate(-50%, -200%) translateX(120px);
+  transform: translate(-50%, -100%) translateX(120px);
+}
+.container.dark .social-icon.medium {
+  transform: translate(40%, -330%) translateX(-120px);
 }
 
 

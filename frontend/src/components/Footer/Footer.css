@@ -7,11 +7,10 @@
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
 }
-
 .site-footer a {
   color: #25f312;
   text-decoration: none;
-  margin: 0 5px;
+  margin: 0 6px;
   transition: color 0.3s;
 }
 
