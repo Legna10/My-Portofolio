@@ -143,7 +143,7 @@ const SkillsnTools = () => {
       <div className="square">
         <h2>My Skills</h2>
         <div className="filter-buttons">
-          {['All', 'Programming & Scripting', 'Networking', 'Cybersecurity','DevOps & Deployment', 'Soft Skills'].map(btn => (
+          {['All', 'Programming & Scripting', 'Networking', 'Cybersecurity', 'Soft Skills'].map(btn => (
             <button
               key={btn}
               className={skillFilter === btn ? 'active' : ''}
@@ -177,7 +177,7 @@ const SkillsnTools = () => {
       <div className="square">
         <h2>Tools I Used</h2>
         <div className="filter-buttons">
-          {['All', 'Programming & Scripting', 'Networking', 'Cybersecurity', 'Others'].map(btn => (
+          {['All', 'Programming & Scripting', 'Networking', 'Cybersecurity','DevOps & Deployment', 'Others'].map(btn => (
             <button
               key={btn}
               className={toolFilter === btn ? 'active' : ''}
