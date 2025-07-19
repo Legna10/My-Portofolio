@@ -33,7 +33,7 @@ const projectData = [
     description: 'NetBoxed is a web application that fuses Netflix, is a streaming platform concept with Letterboxd is social features for movie enthusiasts. The application enables users to browse movies, maintain watchlists, rate films, write reviews, search for content, and connect with other users through a social following system.',
     githublink: 'https://github.com/kunospw/NetBoxed',
     doclink: 'https://docs.google.com/document/d/1HuYefbrj8Pw0wqMb7ss3n30F0bMSd-TmTLoW44eGWmY/edit?usp=sharing',
-    tags: ['React', 'JS', 'TMDB API', 'BcryptHash']
+    tags: ['ReactJS',, 'TMDB API', 'BcryptHash']
   },
   {
     id: 2,
@@ -113,7 +113,7 @@ const projectData = [
     description: 'This Website Portfolio is a personal portfolio website built using React and hosted on Netlify. It displays my background, projects, certifications, and achievements in a structured and visually engaging layout. The site includes interactive features such as modal pop-ups for project details, dark and light mode support, and organized sections for easy navigation. This website was created as a digital space to represent my professional journey and make my work accessible to potential collaborators, employers, and anyone interested in what I do.',
     githublink: 'https://github.com/Legna10/',
     doclink:'',
-    tags: ['React', 'JS', 'Netlify',]
+    tags: ['ReactJS', 'Nodemailer', 'reCAPTCHA v2', 'Netlify',]
   },
   {
     id: 11,
