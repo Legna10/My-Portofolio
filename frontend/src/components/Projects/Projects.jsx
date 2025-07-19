@@ -14,7 +14,11 @@ import P5 from '../../assets/Project/P5.png'
 import TP6 from '../../assets/Project/TP6.png';
 import P6 from '../../assets/Project/P6.png'
 import P7 from '../../assets/Project/P7.png'
+import TP8 from '../../assets/Project/TP8.png'
+import P8 from '../../assets/Project/P8.png'
 import TP9 from '../../assets/Project/TP9.png';
+import TP10 from '../../assets/Project/TP10.png'
+import P10 from '../../assets/Project/P10.png'
 import TP11 from '../../assets/Project/TP11.png';
 import P11 from '../../assets/Project/P11.png';
 import stay from '../../assets/Project/stay.png';
@@ -84,18 +88,18 @@ const projectData = [
   {
     id: 8,
     title: 'RiskAnalyze',
-    thumbnail: conf,
-    image: conf,
+    thumbnail: TP8,
+    image: P8,
     description: 'RiskAnalyze is a web-based cybersecurity risk assessment platform designed to help organizations identify, evaluate, and mitigate digital threats using the OCTAVE Allegro framework. It features an interactive dashboard, dynamic assessment forms, and AI-assisted threat detection through VirusTotal API, allowing real-time URL analysis with data from over 70 antivirus engines. Integrated with Firebase for secure authentication and database management, the system supports compliance with regulations such as GDPR, ISO 27001, and NIST 800-53. RiskAnalyze enables users to assess risks based on business impact, visualize threat levels, and generate actionable reports, offering a comprehensive and scalable solution for modern cybersecurity risk management.',
     githublink: 'https://github.com/coenflour/Security-Risk-Assessment',
     doclink:'https://docs.google.com/document/d/1up1SXJFKDv3zO9NN0hqIvYGJb06GKLAA/edit?usp=sharing&ouid=102828231638890615006&rtpof=true&sd=true',
-    tags: ['React', 'Firebase', 'VirusTotal API']
+    tags: ['React', 'Firebase', 'VirusTotal API', 'Flask']
   },
   {
     id: 10,
     title: 'Checkie by AngPhie',
-    thumbnail: conf,
-    image: conf,
+    thumbnail: TP10,
+    image: P10,
     description: 'Checkie by AngPhie is a productivity web app that helps users manage their tasks and notes efficiently. It features two main pages: Task and Stikies. The Task page allows users to add, track, and organize their to-dos. Meanwhile, the Stikies page mimics the look and feel of physical sticky notes, where users can write quick notes and freely drag them around the screen, offering a flexible, visual way to manage thoughts or reminders. The intuitive drag-and-drop interface on the Stikies page enhances interactivity and makes note-taking feel natural and engaging.',
     githublink: 'https://github.com/Legna10/Checkie-by-AngPhie',
     doclink:'',
@@ -119,7 +123,7 @@ const projectData = [
     description: 'A K-pop-themed CTF challenge site built with React, Firebase, and Netlify. Solve fun and tricky puzzles inspired by BlackPink, Stray Kids, and more!',
     githublink: 'https://github.com/Legna10/Stay143',
     doclink:'',
-    tags: ['React', 'Firebase', 'Netlify', 'Digital Forensic']
+    tags: ['React', 'Firebase', 'Netlify']
   },
   {
     id: 6,
