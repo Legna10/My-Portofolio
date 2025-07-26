@@ -21,6 +21,8 @@ import TP10 from '../../assets/Project/TP10.png'
 import P10 from '../../assets/Project/P10.png'
 import TP11 from '../../assets/Project/TP11.png';
 import P11 from '../../assets/Project/P11.png';
+import TP12 from '../../assets/Project/TP12.png';
+import P12 from '../../assets/Project/P12.png';
 import stay from '../../assets/Project/stay.png';
 import conf from '../../assets/Project/confidential.png'
 
@@ -37,6 +39,38 @@ const projectData = [
   },
   {
     id: 2,
+    title: 'K-Review',
+    thumbnail: TP3,
+    image: P3,
+    description: 'K-Review is a web-based application designed for K-pop fans to discover, review, and manage information about their favorite albums and artists. Built with PHP and MySQL, this platform implements CRUD (Create, Read, Update, Delete).',
+    githublink: 'https://github.com/Legna10/K-Review',
+    doclink: 'https://docs.google.com/document/d/1DisruWKliQVoC87qT02JFF79MjbFPvNa/edit?usp=sharing&ouid=102828231638890615006&rtpof=true&sd=true',
+    tags: ['PHP', 'CRUD', 'SQL']
+  },
+  
+  {
+    id: 3,
+    title: 'K-Hype',
+    thumbnail: TP5,
+    image: P5,
+    description: 'K-HYPE is a web-based platform inspired by the vibrant world of K-Pop music and culture. Its name is derived from HYBE Entertainment, reflecting the concept of a fictional K-Pop agency. This site gathers everything related to the agency—from company profile and artist information to news, events, concerts, comebacks, and complete discography. The website is designed not only to share our passion for K-Pop, but also to serve as a 24/7 hub for fans to access updated content about their favorite idols.',
+    githublink: 'https://github.com/Legna10/K-Hype',
+    doclink: 'https://docs.google.com/document/d/1UijgrIObTex65wn5sNL0sK-3EWQ-5Nce5552QOh72es/edit?usp=sharing',
+    tags: ['HTML', 'CSS', 'Bootstrap']
+  },
+
+  {
+    id: 4,
+    title: 'Checkie by AngPhie',
+    thumbnail: TP10,
+    image: P10,
+    description: 'Checkie by AngPhie is a productivity web app that helps users manage their tasks and notes efficiently. It features two main pages: Task and Stikies. The Task page allows users to add, track, and organize their to-dos. Meanwhile, the Stikies page mimics the look and feel of physical sticky notes, where users can write quick notes and freely drag them around the screen, offering a flexible, visual way to manage thoughts or reminders. The intuitive drag-and-drop interface on the Stikies page enhances interactivity and makes note-taking feel natural and engaging.',
+    githublink: 'https://github.com/Legna10/Checkie-by-AngPhie',
+    doclink:'',
+    tags: ['ReactJS', 'CRUD', ]
+  },
+    {
+    id: 5,
     title: 'tokopari',
     thumbnail: TP2,
     image: P2,
@@ -46,17 +80,7 @@ const projectData = [
     tags: ['Android', 'Java' , 'SQLite', 'Firebase']
   },
   {
-    id: 3,
-    title: 'K-Review',
-    thumbnail: TP3,
-    image: P3,
-    description: 'K-Review is a web-based application designed for K-pop fans to discover, review, and manage information about their favorite albums and artists. Built with PHP and MySQL, this platform implements CRUD (Create, Read, Update, Delete).',
-    githublink: 'https://github.com/Legna10/K-Review',
-    doclink: 'https://docs.google.com/document/d/1DisruWKliQVoC87qT02JFF79MjbFPvNa/edit?usp=sharing&ouid=102828231638890615006&rtpof=true&sd=true',
-    tags: ['PHP', 'CRUD', 'SQL']
-  },
-  {
-    id: 4,
+    id: 6,
     title: 'Pneumonia Detection',
     thumbnail: TP4,
     image: P4,
@@ -66,16 +90,6 @@ const projectData = [
     tags: ['Python', 'CNN', 'Flask']
   },
   {
-    id: 5,
-    title: 'K-Hype',
-    thumbnail: TP5,
-    image: P5,
-    description: 'K-HYPE is a web-based platform inspired by the vibrant world of K-Pop music and culture. Its name is derived from HYBE Entertainment, reflecting the concept of a fictional K-Pop agency. This site gathers everything related to the agency—from company profile and artist information to news, events, concerts, comebacks, and complete discography. The website is designed not only to share our passion for K-Pop, but also to serve as a 24/7 hub for fans to access updated content about their favorite idols.',
-    githublink: 'https://github.com/Legna10/K-Hype',
-    doclink: 'https://docs.google.com/document/d/1UijgrIObTex65wn5sNL0sK-3EWQ-5Nce5552QOh72es/edit?usp=sharing',
-    tags: ['HTML', 'CSS', 'Bootstrap']
-  },
-  {
     id: 7,
     title: 'Case X',
     thumbnail: conf,
@@ -83,7 +97,7 @@ const projectData = [
     description: 'Case X is a digital forensic investigation focused on identifying and analyzing electronic evidence from a suspect is disk image, suspected of involvement in human trafficking through the dark web. Analysis was conducted using Autopsy to examine the file system structure, uncover hidden files, and extract relevant digital artifacts. Network evidence from a provided PCAP file was examined using Wireshark and NetworkMiner, revealing communication with hidden services and anonymous servers. Steganography techniques were detected using QuickStego, while encrypted files were decrypted with the help of CyberChef and John the Ripper was used for password cracking. The collected evidence helped reconstruct the sequence of events and link the suspect is digital activity to illegal operations on the dark web.',
     githublink: '',
     doclink:'',
-    tags: ['Digital Forensic', 'Autopsy', 'Wireshark']
+    tags: ['Digital Forensics', 'Autopsy', 'Wireshark']
   },
   {
     id: 8,
@@ -93,20 +107,20 @@ const projectData = [
     description: 'RiskAnalyze is a web-based cybersecurity risk assessment platform designed to help organizations identify, evaluate, and mitigate digital threats using the OCTAVE Allegro framework. It features an interactive dashboard, dynamic assessment forms, and AI-assisted threat detection through VirusTotal API, allowing real-time URL analysis with data from over 70 antivirus engines. Integrated with Firebase for secure authentication and database management, the system supports compliance with regulations such as GDPR, ISO 27001, and NIST 800-53. RiskAnalyze enables users to assess risks based on business impact, visualize threat levels, and generate actionable reports, offering a comprehensive and scalable solution for modern cybersecurity risk management.',
     githublink: 'https://github.com/coenflour/Security-Risk-Assessment',
     doclink:'https://docs.google.com/document/d/1up1SXJFKDv3zO9NN0hqIvYGJb06GKLAA/edit?usp=sharing&ouid=102828231638890615006&rtpof=true&sd=true',
-    tags: ['React', 'Firebase', 'VirusTotal API', 'Flask']
-  },
-  {
-    id: 10,
-    title: 'Checkie by AngPhie',
-    thumbnail: TP10,
-    image: P10,
-    description: 'Checkie by AngPhie is a productivity web app that helps users manage their tasks and notes efficiently. It features two main pages: Task and Stikies. The Task page allows users to add, track, and organize their to-dos. Meanwhile, the Stikies page mimics the look and feel of physical sticky notes, where users can write quick notes and freely drag them around the screen, offering a flexible, visual way to manage thoughts or reminders. The intuitive drag-and-drop interface on the Stikies page enhances interactivity and makes note-taking feel natural and engaging.',
-    githublink: 'https://github.com/Legna10/Checkie-by-AngPhie',
-    doclink:'',
-    tags: ['React', 'CRUD', ]
+    tags: ['ReactJS', 'Firebase', 'VirusTotal API', 'Flask']
   },
   {
     id: 9,
+    title: 'CTF PU',
+    thumbnail: TP12,
+    image: P12,
+    description: 'This is a write-up of a Capture The Flag (CTF) challenge created for the Ethical Hacking & Digital Forensic course. The challenge features various categories, including Forensics, Web Exploitation, Cryptography, OSINT, and Miscellaneous, designed to test student is skills in analyzing digital evidence, exploiting web vulnerabilities, decrypting encoded messages, conducting open-source investigations, and solving unique puzzles. It encourages participants to apply ethical hacking techniques and digital forensic methods in a hands-on environment that simulates real-world scenarios.',
+    githublink: '',
+    doclink: 'https://docs.google.com/document/d/1zKPs4Q9F36npwQG9-k6jm0qEwKnRTILNF-5ybWW97s8/edit?usp=sharing',
+    tags: ['CTF', 'Forensics', 'Cryptography', 'OSINT']
+  },
+  {
+    id: 10,
     title: 'This website',
     thumbnail: TP9,
     image: TP9,
@@ -126,7 +140,7 @@ const projectData = [
     tags: ['React', 'Firebase', 'Netlify']
   },
   {
-    id: 6,
+    id: 12,
     title: 'SudoAngela',
     thumbnail: TP6,
     image: P6,
