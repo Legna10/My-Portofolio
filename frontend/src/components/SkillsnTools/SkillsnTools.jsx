@@ -13,44 +13,44 @@ const skills = [
   {
     category: "Programming & Scripting",
     items: [
-      { name: "Java", icon: <FaJava />, level: 90 },
-      { name: "Python", icon: <FaPython />, level: 85 },
-      { name: "C++", icon: <SiCplusplus />, level: 80 },
-      { name: "HTML", icon: <FaHtml5 />, level: 95 },
-      { name: "CSS", icon: <FaCss3Alt />, level: 90 },
-      { name: "JavaScript", icon: <FaJs />, level: 90 },
-      { name: "Git", icon: <FaGitAlt />, level: 90 },
-      { name: "GitHub", icon: <FaGithub />, level: 90 },
-      { name: "SQL", icon: <FaDatabase />, level: 85 },
-      { name: "NoSQL", icon: <SiFirebase />, level: 85 },
-      { name: "Flask", icon: <SiFlask />, level: 85 },
-      { name: "React", icon: <FaReact />, level: 85 },
-      { name: "Laravel", icon: <FaLaravel />, level: 85 },
-      { name: "Bootstrap", icon: <FaBootstrap />, level: 85 },
+      { name: "Java", icon: <FaJava />},
+      { name: "Python", icon: <FaPython />},
+      { name: "C++", icon: <SiCplusplus />},
+      { name: "HTML", icon: <FaHtml5 />},
+      { name: "CSS", icon: <FaCss3Alt />},
+      { name: "JavaScript", icon: <FaJs />},
+      { name: "Git", icon: <FaGitAlt />},
+      { name: "GitHub", icon: <FaGithub />},
+      { name: "SQL", icon: <FaDatabase />},
+      { name: "NoSQL", icon: <SiFirebase />},
+      { name: "Flask", icon: <SiFlask />},
+      { name: "React", icon: <FaReact />},
+      { name: "Laravel", icon: <FaLaravel />},
+      { name: "Bootstrap", icon: <FaBootstrap />},
     ]
   },
   {
     category: "Networking",
     items: [
-      { name: "Cisco (Routing, Switching, VLAN, DHCP, OSPF)", icon: <SiCisco />, level: 95 },
-      { name: "Mikrotik (Installation, Configuration)", icon: <SiMikrotik />, level: 95 },
-      { name: "Network Config, Management, and Troubleshooting", icon: <FaNetworkWired />, level: 90 }
+      { name: "Cisco (Routing, Switching, VLAN, DHCP, OSPF)", icon: <SiCisco />},
+      { name: "Mikrotik (Installation, Configuration)", icon: <SiMikrotik />},
+      { name: "Network Config, Management, and Troubleshooting", icon: <FaNetworkWired />}
     ]
   },
   {
     category: "Cybersecurity",
     items: [
-      { name: "Digital Forensics", icon: <FaSearch />, level: 90},
-      { name: "Security Compliance & Audit", icon: <FaClipboardCheck /> , level: 85},
-      { name: "Security Risk Management", icon: <FaShieldAlt />, level: 83 }
+      { name: "Digital Forensics", icon: <FaSearch />},
+      { name: "Security Compliance & Audit", icon: <FaClipboardCheck />},
+      { name: "Security Risk Management", icon: <FaShieldAlt />}
     ]
   },
   {
     category: "Soft Skills",
     items: [
-      { name: "Teamwork", icon: <FaUserFriends />, level: 95 },
-      { name: "Problem Solving", icon: <FaBrain />, level: 90 },
-      { name: "Adaptable", icon: <FaSyncAlt />, level: 93 }
+      { name: "Teamwork", icon: <FaUserFriends />},
+      { name: "Problem Solving", icon: <FaBrain />},
+      { name: "Adaptable", icon: <FaSyncAlt />}
     ]
   }
 ]
@@ -162,9 +162,6 @@ const SkillsnTools = () => {
                   <div className="icon">{skill.icon}</div>
                   <div className="skill-info">
                     <span className="skill-name">{skill.name}</span>
-                    <div className="skill-bar">
-                      <div className="skill-level" style={{ width: `${skill.level}%` }}></div>
-                    </div>
                   </div>
                 </div>
               ))}

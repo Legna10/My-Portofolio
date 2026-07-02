@@ -2,15 +2,15 @@ import React, { useState } from 'react';
 import { useEffect, useRef } from 'react';
 import './Projects.css';
 import TP1 from '../../assets/Project/TP1.png'
-import P1 from '../../assets/Project/P1.png'
+import P1 from '../../assets/Project/netboxed.png'
 import TP2 from '../../assets/Project/TP2.png'
-import P2 from '../../assets/Project/P2.png'
+import P2 from '../../assets/Project/tokopari.png'
 import TP3 from '../../assets/Project/TP3.png'
-import P3 from '../../assets/Project/P3.png'
+import P3 from '../../assets/Project/kreview.png'
 import TP4 from '../../assets/Project/TP4.png';
 import P4 from '../../assets/Project/P4.png'
 import TP5 from '../../assets/Project/TP5.png';
-import P5 from '../../assets/Project/P5.png'
+import P5 from '../../assets/Project/khybe.png'
 import TP6 from '../../assets/Project/TP6.png';
 import P6 from '../../assets/Project/P6.png'
 import P7 from '../../assets/Project/P7.png'

@@ -31,9 +31,18 @@ const AboutMe = () => {
 
   const experience = [
     {
+      title: 'Hexpharm Jaya Laboratories',
+      subtitle: 'IT Intern',
+      date: 'Aug 2025 - Present',
+      details: [
+        'Developing aplication (Laravel, React)',
+        'Creating VR appliacion',
+      ],
+    },
+    {
       title: 'President University',
       subtitle: 'Student Ambassador',
-      date: 'Sep 2024 - Present',
+      date: 'Sep 2024 - Aug 2025',
       details: [
         'Introduced campus to over 300 students and parents from Samarinda.',
         'Introduced campus to over 250 students and parents from SMK St. Mikael.',
@@ -46,7 +55,7 @@ const AboutMe = () => {
       subtitle: 'Network Engineer', 
       date: 'Jan 2022 - Jul 2022',
       details: [
-        'Helped resolve network issues by installing and configuring TP-Link TL-WA850RE.',
+        'Helped resolve network issues by installing and configuring network devices',
         'Maintained the existing office network infrastructure.',
       ],
     },
@@ -114,8 +123,6 @@ const AboutMe = () => {
                   </div>
                 </div>
               ))}
-
-              <div className="dot end-dot" />
             </div>
           </div>
 
@@ -141,7 +148,6 @@ const AboutMe = () => {
                   </div>
                 </div>
               ))}
-              <div className="dot end-dot" />
             </div>
           </div>
         </div>

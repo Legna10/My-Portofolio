@@ -1,7 +1,6 @@
-const nodemailer = require('nodemailer')
-const fetch = require('node-fetch')
+import nodemailer from "nodemailer";
 
-exports.handler = async (event) => {
+export const handler = async (event) => {
   const { user_name, user_email, message, token } = JSON.parse(event.body)
 
   if (!token) {
