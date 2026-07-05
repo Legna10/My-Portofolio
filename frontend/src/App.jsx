@@ -26,7 +26,7 @@ const AppRoutes = ({ theme, setTheme }) => (
       <Route path="/projects" element={<Projects />} />
       <Route path="/certificates" element={<Certificates />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<h1 style={{ textAlign: 'center' }}>404 - Page Not Found</h1>} />
+      <Route path="*" element={<h1 className="not-found">404 - Page Not Found</h1>} />
     </Routes>
   </MainLayout>
 );

@@ -8,3 +8,7 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>,
 )
+
+window.onloadCallback = function () {
+  console.log("reCAPTCHA loaded!");
+};
