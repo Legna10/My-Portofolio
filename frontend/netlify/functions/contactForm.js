@@ -1,7 +1,25 @@
 import nodemailer from "nodemailer";
 
 export const handler = async (event) => {
-  const { user_name, user_email, message, token } = JSON.parse(event.body)
+  if (event.httpMethod !== "POST") {
+    return {
+      statusCode: 405,
+      body: JSON.stringify({
+        error: "Method Not Allowed",
+      }),
+    };
+  }
+
+  if (!event.body) {
+    return {
+      statusCode: 400,
+      body: JSON.stringify({
+        error: "Request body is required",
+      }),
+    };
+  }
+
+  const { user_name, user_email, message, token } = JSON.parse(event.body);
 
   if (!token) {
     return {
